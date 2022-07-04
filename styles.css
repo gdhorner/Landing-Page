@@ -6,14 +6,29 @@ body{
 }
 
 .header{
-    padding: 0px 128px 0px 128px;
-    background-color: #1f2937
+    padding: 0px 20% 32px 20%;
+    background-color: #1f2937;
 }
 
 .upper-header, .lower-header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.left{
+    align-items: flex-start;
+}
+
+.right{
+    align-items: flex-end
 }
 
 .name, .intro{
@@ -24,12 +39,13 @@ body{
 .header, .body, .quote, .last{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 3;
 }
 
 .body{
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px; 
 }
 
 .intro-cont, li{
@@ -38,32 +54,38 @@ body{
 }
 
 .lucy{
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bolder;
     color: #1F2937;
+    padding-bottom: 32px;
 }
 
 .boxes{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
     gap: 32px;
 }
 
 .item{
     display: flex;
     flex-direction: column;
+    flex: 1;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
+.item-text{
+    text-align: center;
+    height: 40px;
+}
 
-
-.last-section, .quote{
+.last-section{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 5;
 }
 
 .quote{
@@ -81,14 +103,31 @@ body{
 
 .box{
     display: flex;
-    flex-direction: column;
+    background-color: #3882f6;
+    margin: 32px 64px 32px 64px;
+    border-radius: 12px;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.box-left, .box-right{
+    display: flex;
+    flex-direction: column;
+    color: #f9faf9;
+}
+
+#header{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 
 .footer{
     background-color: #1f2937;
     display: flex;
     flex: 1;
-    color: white;
+    color: #f9faf9;
     justify-content: center;
     align-items: center;
 }
@@ -99,16 +138,26 @@ button{
     border-radius: 12px;
     border: none;
     font-size: 14px;
-    width: 50%;
+    font-weight: bold;
+    width: 100px;
+    height: 32px;
+}
+
+#last-button{
+    border: 3px solid #f9faf9;
+    width: 112px;
 }
 
 img{
     height: auto;
-    width: 75px;
+    width: 150px;
     border: 3px solid #3882F6;
     border-radius: 12px;
 }
 
+#long{
+    width: 250px;
+}
 
 ul{
     list-style-type: none;
